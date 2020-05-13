@@ -1,27 +1,44 @@
-body{
+* { 
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+  body{
     background-color:black; 
     background-image:url(https://wallpaperplay.com/walls/full/f/1/b/12871.jpg);
     background-size: 100vw;
+    backdrop-filter: blur(3px)
+  }
+  heather {
+    height:100vh;
   }
     .site-title,
     .site-subtitle {
       text-align:center;
       color:whitesmoke;
-      font-family:arial; 
+      margin: 20px; 
   }
   .site-subtitle{
     font-size:20px;
     font-weight:100;
     font-style:italic;
+    font-family:Arial; 
+  }
+  .site-title{
+    font-family:georgia; 
   }
     .menu ul {
+      box-shadow: 0px 0px 20px 10px whitesmoke;
       display:flex;
       justify-content:space-around;
       text-decoration:none;
       font-family:helvetica; 
       font-weight:bold;
       list-style:none;
-      color:whitesmoke;
+      color:whitesmoke; 
+      margin: 20px; 
+      border: 4px; 
+      padding: 4px; 
     }
   a {
       background-color: rgba(0,0,0,0.2);
@@ -35,4 +52,33 @@ body{
       display:block;
       margin:auto;
       align-items:center;
+      width:350px;
+      height:350px;
   }
+.img-portfolio {
+  display:block;
+  margin:auto;
+  align-items:center;
+  height: 100px;
+  width: 100px; 
+  border-image:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.portifolio {
+  align-items:center;
+  color:whitesmoke;
+}
+.portifolio h2{
+  font-family:georgia;
+  margin: 20px; 
+  border: 10px; 
+  padding: 4px;
+}
+.portifolio figcaption {
+  text-align:center;
+  font-family:arial;
+  color: whitesmoke;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.portifolio figure {
+  margin: 40px; 
+}
